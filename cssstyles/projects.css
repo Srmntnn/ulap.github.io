@@ -1,0 +1,480 @@
+.project-wrapper {
+    margin-bottom: 204px;
+}
+
+.tab-container {
+    margin-top: 204px;
+    flex-shrink: 0;
+    padding: 0 128px;
+}
+
+.tab-container .tab-box {
+    display: flex;
+    justify-content: space-between;
+    height: 74px;
+    margin: 0 89px;
+    background-color: var(--black10);
+    border-radius: 100vmax;
+    padding: 4px;
+    position: relative;
+    gap: 8px;
+}
+
+.tab-container .tab-box button {
+    flex: 1;
+    width: 250px;
+    background-color: transparent;
+    border: none;
+    white-space: nowrap;
+    text-align: center;
+    font: var(--H6) Nunito, Arial;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    color: var(--black50);
+    z-index: 1;
+    padding: 0 16px;
+    transition: all 0.6s ease-in-out;
+}
+
+.tab-container .tab-box .tab-btn.active {
+    color: var(--black10);
+}
+
+.glider {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 2px;
+    width: 31.6%;
+    border-radius: 100vmax;
+    background-color: var(--black);
+    bottom: 4px;
+    transition: all 0.6s cubic-bezier(0.68, -0.51, 0.265, 1.55);
+}
+
+.tab-container .tab-panels {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+    width: 100%;
+}
+
+.tab-panels .contents {
+    display: none;
+    animation: moving 0.6s  cubic-bezier(0.68, -0.51, 0.265, 1.55);
+}
+
+@keyframes moving {
+    from{transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+}
+
+.tab-panels .contents.personal {
+    width: 100%;
+}
+
+.tab-panels .tab-wrapper {
+    display: grid;
+    flex: 1;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr) );;
+    gap: 128px 32px;
+}
+
+.tab-panels .contents.active {
+    display: block;
+}
+
+/*Contents*/
+.projects-tools img  {
+    height: 32px;
+    margin: 0 16px 0 0;;
+}
+
+.projects-tools div {
+    display: flex;
+    background-color: var(--black10);
+    align-items: center;
+    padding: 16px 16px;
+    border-radius: 8px;
+}
+
+.projects-tools div p {
+    font: 1em Poppins, Arial;
+    text-transform: uppercase;
+
+}
+
+.tab-panels .crane {
+    width: 100%;
+}
+
+.crane h1{
+    text-align: center;
+    font: var(--H5-laptop) Nunito, Arial;
+    font-weight: 700
+}
+
+.crane .crane-image, .swit-image {
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+}
+
+.card p {
+    position: absolute;
+    padding: 16px 32px;
+    background-color: rgba(39, 39, 44, 0.479);
+    text-align: start;
+    font-family: Poppins, Arial;
+    color: var(--secondary-color);
+    opacity: 0;
+    pointer-events: none;
+    bottom: 3px;
+    transition: all 0.6s ease;
+}
+
+.card:hover p{
+    visibility: visible;
+    opacity: 1;
+}
+
+.card:hover .crane-image, .card:hover .swit-image{
+    transform: scale(1.1);
+}
+
+
+.swit-image {
+    width: 100%;
+}
+
+.crane {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.crane .projects-tools {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(1fr, 1fr) );
+    gap: 16px;
+    padding: 0 16px;
+}
+
+.crane button {
+    background-color: #0D1144;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 54px;
+    outline: none;
+    transition: all 0.2s linear;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 15%);
+}
+
+.crane button:hover {
+    transform: scale(1.03);
+}
+
+.crane button a {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+}
+
+.crane button.bncp-btn {
+    background-color: #0D1114;
+}
+
+.crane button.swit-btn {
+    background-color: #0D1114;
+}
+
+.crane button img {
+    height: 40px;
+}
+
+/*Gallery*/
+
+.contents.gallery,
+.contents.web {
+    width: 100%;
+}
+
+.gallery-container {
+    width: 100%;
+}
+
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-wrapper div {
+    border: solid 1px var(--black10);
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    display: flex;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.gallery-wrapper div img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-wrapper div img:hover {
+    transform: scale(1.2);
+}
+
+#lightbox {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    top: 0;
+    z-index: 10000000;
+    width: 100%;
+    display: none;
+    backdrop-filter: blur(15px);
+}
+
+#lightbox.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#lightbox img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+#lightbox::before {
+    content: "close";
+    cursor: pointer;
+    letter-spacing: 5px;
+    font: 0.9em Poppin, Arial;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    height: 50px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(180deg, var(--secondary-color), var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+/*Web*/
+
+.web-container .web-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.web-container .web-wrapper h1 {
+    font: var(--H4-laptop) Nunito, Arial;
+    font-weight: 700;
+    color: var(--black);
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.web-container .web-wrapper h1:hover {
+    letter-spacing: 10px;
+}
+
+.web-container .web-wrapper p {
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    font: 1em Poppins, Arial;
+    font-weight: 500;
+    color: var(--black75);
+}
+
+.project-picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+.project-picture .project-image{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 6/4;
+    transform: scale(1.4);
+    transition: all 0.4s ease-in-out;
+}
+
+.project-picture .project-image:hover {
+    transform: skew(7deg, -5deg) scale(1.5) rotateX(-20deg);
+}
+
+.project-wrapper .projects-tools {
+    display: grid;
+    width: 100%;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.proj-btn {
+    margin-top: 16px;
+    min-width: 200px;
+    max-width: 400px;
+    width: 100%;
+    cursor: pointer;
+    height: 64px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0D1114;
+    transition: all 0.4s linear;
+}
+
+.proj-btn:hover {
+    transform: scale(1.07) translateY(-10%);
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 1038px) {
+    .tab-panels .tab-wrapper {
+        grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );;
+    }
+
+}
+
+ 
+
+
+
+/*Media Queries*/
+@media screen and (max-width: 1000px) {
+    .tab-container {
+        margin-top: 128px;
+        padding: 0 96px;
+    }
+
+    .tab-container  .tab-box {
+        margin: 0;
+    }
+
+    .tab-container .tab-box button {
+        font: 1.3em Nunito, Arial;
+        font-weight: 700;
+    }
+}
+
+@media screen  and (max-width: 880px){
+    .crane .projects-tools {
+        grid-template-columns: 1fr;
+    }
+
+    .card p {
+        font-size: 0.9em;
+        padding: 16px;
+    }
+}
+
+@media screen  and (max-width: 750px){
+    .card p {
+        font-size: 0.64em;
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .project-wrapper {
+        margin-bottom: 128px;
+    }
+    
+    .tab-container {
+        margin-top: 96px;
+        padding: 0 1em;
+    }
+
+    .tab-container .tab-box {
+        height: 64px;
+        margin: 0;
+    }
+    
+    .tab-container .tab-box button {
+        font: 0.9em Nunito, Arial;
+    }
+
+    .tab-panels .tab-wrapper {
+        display: grid;
+        gap: 96px 16px;
+    }
+
+    .crane .projects-tools {
+        display: grid;
+    }
+
+    .projects-tools img  {
+        height: 24px;
+    }
+
+    .crane h1 {
+        font-size: 1.4em;
+    }
+
+    .crane button {
+        padding: 8px;
+    }
+
+    .crane button img {
+        height: 32px;
+    }
+
+    .card p {
+        padding: 16px 16px;
+        font-size: 0.8em;
+    }
+
+    .web-container .web-wrapper p {
+        max-width: 200px;
+        width: 100%;
+        text-align: center;
+        font: 0.9em Poppins, Arial;
+        font-weight: 500;
+
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tab-container {
+        padding: 0;
+    }
+
+    .tab-container .tab-box button {
+        font: 0.8em Nunito, Arial;
+        white-space: wrap;
+    }
+
+}

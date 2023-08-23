@@ -1,0 +1,103 @@
+.footer-container {
+    border-top: solid 1px var(--black10);
+}
+
+.contact-container .contact-info {
+    max-width: 475px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0 0 0 400px;
+}
+
+.contact-info h1 {
+    font-family: Nunito, Arial;
+    font-family: 700;
+    color: var(--black);
+    font-size: var(--H5);
+}
+
+.contact-info p:nth-child(2) {
+    font-size: var(--H6-laptop);
+    color: var(--black75);
+    font-family: Poppins, Arial;
+}
+
+.contact-info div {
+    font-family: Nunito, Arial;
+    display: flex;
+    gap: 16px;
+    font-weight: 700;
+}
+
+.contact-info div span {
+    background-color: var(--black10);
+    width: 2px;
+}
+
+.contact-info div p:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.contact-info div p:nth-child(3) {
+    color: var(--black);
+}
+
+.footer-contents {
+    width: 100%;
+    display: flex;
+    height: 4em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-contents div {
+    display: flex;
+}
+
+.contact-btn {
+    width: 65%;
+    height: 3.5em;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    font-family: Nunito, Arial;
+    color: var(--secondary-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    opacity: 80%;
+}
+
+/*djasdas*/
+
+.footer-contents {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-contents div:nth-child(1) {
+    font-family: Nunito, Arial;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+.footer-contents div:nth-child(2) {
+    font-family: Nunito, Arial;
+    display: flex;
+    gap: 32px;
+    font-size: 0.9rem;
+}
+
+.terms a {
+    color: var(--primary-color)
+}
+
+.terms-2 a {
+    color: var(--black);
+}

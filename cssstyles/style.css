@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #3887FE;
+    --secondary-color: #CBEAF6;
+    --gradient: linear-gradient(-90deg, #3887fe, #CBEAF6);
+    --gradient-2: linear-gradient(90deg, #3887fe, #CBEAF6);
+    --black: #212428;
+    --black75: #595B5E;
+    --black50: #74797C;
+    --black25: #C7C8C9;
+    --black10: #E9EAEA;
+
+/*1440 - 1220*/
+    --H1: 118.70px;
+    --H2: 83.95px;
+    --H3: 59.37px;
+    --H4: 41.99px;
+    --H5: 29.69px;
+    --H6: 21px;
+
+/*1220 - 600*/
+    --H1-laptop: 101.75px;
+    --H2-laptop: 71.96px;
+    --H3-laptop: 50.89px;
+    --H4-laptop: 35.99px;
+    --H5-laptop: 25.45px;
+    --H6-laptop: 18.00px;
+
+/*1220 - 600*/
+    --H1-mobile: 64.09px;
+    --H2-mobile: 51.27px;
+    --H3-mobile: 41.02px;
+    --H4-mobile: 32.81px;
+    --H5-mobile: 26.25px;
+    --H6-mobile: 21.00px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.progress-bar {
+    position: fixed;
+    width: 100%;
+    height: 0.5vh;
+    z-index: 99999;
+}
+
+.filled {
+    width: 0%;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* scroll top button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 1rem;
+    right: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    background: var(--primary-color);
+    border-radius: 0.4rem;
+    text-decoration: none;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    z-index: 9999;
+}
+
+.scroll-top-btn.active {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.scroll-top-btn span img {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 24px;
+}
+
+.preloader {
+    background: var(--black);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.pre-load {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preloader img {
+    position: absolute;
+    right: 0;
+    animation: clouds 6s linear infinite;
+}
+
+.preloader .cloud1 {
+    transform: translateY(220%);
+    height: 70px;
+    animation: clouds 7s linear infinite;
+}
+
+.preloader .cloud2 {
+    transform: translateY(-300%);
+    height: 100px;
+    animation: clouds 5s linear infinite;
+}
+
+.preloader .cloud3 {
+    transform: translateY(-200%);
+    height: 80px;
+    animation: clouds 7s linear infinite;
+}
+
+.preloader .cloud4 {
+    transform: translateY(290%);
+    height: 120px;
+    animation: clouds 9s linear infinite;
+}
+
+.preloader .cloud5 {
+    transform: translateY(-140%);
+    z-index: -111;
+    animation: clouds 9s linear infinite;
+}
+
+.preloader .cloud6 {
+    transform: translateY(140%);
+    z-index: -111;
+    animation: clouds 8s linear infinite;
+}
+
+@keyframes clouds {
+    from{right: -20%;}
+    to{right: 100%};
+}
+
+.spinner {
+   position: relative;
+   width: 100px;
+   height: 100px;
+   animation: spinner-xza56z 2s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+   content: '';
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   background: #3887fe;
+   border-radius: 50%;
+   animation: spinner-lqsq3g 1.25s infinite ease;
+}
+
+.spinner::before {
+   height: 75%;
+   width: 75%;
+   transform-origin: -40% -80%;
+}
+
+.spinner::after {
+   height: 50%;
+   width: 50%;
+   transform-origin: 40% 80%;
+}
+
+@keyframes spinner-xza56z {
+   to {
+      transform: rotate(360deg);
+   }
+}
+
+@keyframes spinner-lqsq3g {
+   0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+   }
+
+   50% {
+      transform: translate(-50%, -50%) scale(0);
+   }
+}
+

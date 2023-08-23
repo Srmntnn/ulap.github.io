@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aenon | Ulap</title>
+    <link rel = "icon" href = "svg/j. (4).svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <link rel="stylesheet" href="cssstyles/style.css">
+    <link rel="stylesheet" href="cssstyles/header.css">
+    <link rel="stylesheet" href="cssstyles/mediaqueries.css">
+    <link rel="stylesheet" href="cssstyles/footer.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="cssstyles/responsive.css">
+    <link rel="stylesheet" href="cssstyles/projects.css">
+</head>
+<body class="no-scroll">
+
+    <div class="preloader">
+        <div class="spinner"></div>
+        <img class="cloud1" src="Logo.png" alt="">
+        <img class="cloud2" src="Logo.png" alt="">
+        <img class="cloud3" src="Logo.png" alt="">
+        <img class="cloud4" src="Logo.png" alt="">
+        <img class="cloud5" src="Logo.png" alt="">
+        <img class="cloud6" src="Logo.png" alt="">
+    </div>
+
+
+    <div class="progress-bar">
+        <div class="filled"></div>
+    </div>
+
+    <header class="header" data-aos="zoom-in-down">
+        <div class="nav-container">
+            <div data-text="Ulap" class="logo">
+                <a href="ulap.html"><img class="logo-img" src="Logo.png" alt="Logo"></a>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="ulap.html">Home</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="htmlfiles/contanct.html">Contact</a></li>
+                    <li><a href="htmlfiles/resume.html">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-container">
+                <div class="instagram">
+                    <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                </div>
+                <div class="github">
+                    <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                </div>
+                <div class="discord">
+                    <a href="https://discordapp.com/users/804271553620738079" onclick="toggleMenu()" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <nav id="hamburger-nav" class="ham-nav">
+            <div data-text="Ulap" class="logo">
+                <img class="logo-img" src="Logo.png" alt="Logo">
+            </div>
+            <div class="hamburger-menu" >
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <li><a href="ulap.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="aboutme.html" onclick="toggleMenu()">About me</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="htmlfiles/contanct.html" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="htmlfiles/resume.html" onclick="toggleMenu()">Resume</a></li>
+                <div class="icons-container">
+                    <div class="instagram">
+                        <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="github">
+                        <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                    </div>
+                    <div class="discord">
+                        <a href="https://discordapp.com/users/804271553620738079" onclick="toggleMenu()" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="project-wrapper">
+                    <div class="tab-container">
+                        <div class="tab-box" data-aos="zoom-in-up">
+                            <button id="personal" class="tab-btn active">
+                                Personal Projects
+                            </button>
+                            <button class="tab-btn">
+                                Gallery
+                            </button>
+                            <button class="tab-btn">
+                                Web Project
+                            </button>
+                            <div class="glider active"></div>
+                        </div>
+                        <div class="tab-panels" >
+                            <div class="contents active personal">
+                                <div class="tab-wrapper">
+
+                                    <div class="crane">
+                                        <div class="card">
+                                            <img class="crane-image" src="projects/bncp.svg" alt="">
+                                            <p>An E-commerce website that i built with my classmates/groupmates for a presentation in our HCI(Human Computer Interface) subject.</p>
+                                        </div>
+                                        <h1>BNCP</h1>
+                                        <div class="projects-tools">
+                                            <div>
+                                                <img src="icons/logos_figma.svg" alt="">
+                                                <p>Figma</p>
+                                            </div>
+                                        </div>
+                                        <button class="bncp-btn"><a target="_blank" href="https://www.figma.com/proto/ucet54aum0QQ0LgzY3Dz2H/BNCP?page-id=0%3A1&type=design&node-id=0-3&t=ggCKmZpcBWOb1vp1-0&scaling=min-zoom&starting-point-node-id=0%3A3">
+                                            <img src="icons/link.svg" alt="">
+                                        </a></button>
+                                    </div>
+
+                                    <div class="crane">
+                                        <div class="card">
+                                            <img class="swit-image" src="projects/swit.svg" alt="">
+                                            <p>A project that supposedly for my crush HAHAHHAHA but, i already moved on EYYYYYYYYYYYYY!</p>
+                                        </div>
+                                        <h1>Swit Swit</h1>
+                                        <div class="projects-tools">
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-html.svg" alt="">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-css.svg" alt="">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/javascript-1.svg" alt="">
+                                                <p>javascript</p>
+                                            </div>
+                            
+                                        </div>
+                                        <button class="swit-btn">
+                                        <a target="_blank" href="https://srmntnn.github.io/biga_biga.html">
+                                            <img src="icons/link.svg" alt="">
+                                        </a></button>
+                                    </div>
+
+                                    <div class="crane">
+                                        <div class="card">
+                                            <img class="crane-image" src="icons/image 2.svg" alt="">
+                                            <p>This is a game that i often play in arcade with my friends whenever we have a break in our class or vacant. so i created a web game from it.</p>
+                                        </div>
+                                        <h1>Crane Crane</h1>
+                                        <div class="projects-tools">
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-html.svg" alt="">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-css.svg" alt="">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/javascript-1.svg" alt="">
+                                                <p>javascript</p>
+                                            </div>
+                            
+                                        </div>
+                                        <button><a target="_blank" href="https://srmntnn.github.io/srmntnn-crane2.github.io/cranecrane.html">
+                                            <img src="icons/link.svg" alt="">
+                                        </a></button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="contents gallery">
+                                <div class="gallery-container">
+                                    <div class="gallery-wrapper">
+                                        <div>
+                                            <img class="light-b" src="./Gallery/Mustang Retcruitment.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="./Gallery/Mustang Introduction.png"  alt="">
+                                        </div>
+                                        <div >
+                                            <img class="light-b" src="./Gallery/sksks.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="./Gallery/362537558_786406079834108_8395257090740567931_n.png" alt="">        
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="./Gallery/red manok.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="Logo.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="./Gallery/chsmu logoshit.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="light-b" src="./Gallery/aenon.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contents web">
+                                <div class="web-container">
+                                    <div class="web-wrapper">
+                                        <div class="project-picture">
+                                            <img class="project-image" src="artfiles/BNP.png" alt="">
+                                        </div>
+                                        <h1>BNCP</h1>
+                                        <p>An E-commerce website that i built with my classmates/groupmates for a presentation in our HCI(Human Computer Interface) subject.</p>
+                                        <div class="projects-tools">
+                                            <div>
+                                                <img src="icons/logos_figma.svg" alt="">
+                                                <p>Figma</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-html.svg" alt="">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/vscode-icons_file-type-css.svg" alt="">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div>
+                                                <img src="icons/javascript-1.svg" alt="">
+                                                <p>javascript</p>
+                                            </div>
+                                        </div>
+                                        <button class="proj-btn"><a href="#">
+                                            <img src="icons/link.svg" alt="">
+                                        </a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="#top" class="scroll-top-btn">
+        <span class="icon-angle-up"><img src="icons/doublearrow.svg" alt=""></span>
+    </a>
+</body>
+<footer>
+    <section class="footer-container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h1>I’m currently available for freelance
+                        work.</h1>
+                    <p>If you are looking for a  designer to work  that love to get stuffs done faster, let’s talk.</p>
+                    <div class="contacts">
+                        <p>(+63) 9063244739</p>
+                        <span></span>
+                        <p>sarmentaaenon@gmaill.com</p>
+                    </div>
+                    <a href="#">
+                        <button class="contact-btn">Got a project in mind? Lets talk.</button>
+                    </a>
+                </div>
+            </div>
+    </section>
+    
+    <section class="footer-container">
+            <div class="contact-container">
+                <div class="footer-contents">
+                    <div>
+                        <p>&copy;2023 Aenon, Ulap, All Rights Reserved.</p>
+                    </div>
+        
+                    <div>
+                        <li class="terms"><a href="#">Terms and Condition</a></li>
+                        <li class="terms-2"><a href="#">Privacy Policy</a></li>
+                    </div>
+        
+                    <div class="icons-container">
+                        <div class="instagram">
+                            <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                        </div>
+                        <div class="github">
+                            <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                        </div>
+                        <div class="discord">
+                            <a href="https://discordapp.com/users/804271553620738079" onclick="toggleMenu()" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</footer>
+</html>

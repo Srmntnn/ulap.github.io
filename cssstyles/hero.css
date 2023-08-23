@@ -1,0 +1,85 @@
+@import url(style.css);
+@font-face {
+    font-family: Peace-sans;
+    src: url(/Fonts/peace-sans/peace_sans.otf);
+}
+
+.hero {
+    margin-top: 204px;
+    text-align: center;
+    padding: 0 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    z-index: 0;
+}
+
+.hero .author-name {
+    font-size: var(--H4);
+    font-family: Nunito, Arial;
+    font-weight: 700;
+    width: fit-content;
+    background: -webkit-linear-gradient(180deg, var(--secondary-color), var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: var(--H1);
+    font-family: Nunito, Arial;
+    font-size: 700;
+    line-height: 120px;
+}
+
+.hero .info{
+    font-size: var(--H6);
+    font-family: Poppins, Arial;
+    width: 600px;
+    margin: 0 auto;
+    color: var(--black75);
+}
+
+.button-container {
+    padding: 10px 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.button-container button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:16px 32px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(-90deg, var(--primary-color), var(--secondary-color));
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform-origin: right;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 25%);
+}
+
+.button-container button p {
+    font-size: 15px;
+    transition: all 0.5s ease-in-out;
+    padding: 0 16px 0 0;
+    font-family: Poppins, Arial;
+    color: var(--black75);
+}
+
+.button-container button:hover p {
+    color: var(--secondary-color);
+} 
+
+.button-container button .plane {
+    width: 24px;
+}
+
+.button-container button:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+

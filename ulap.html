@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aenon | Ulap</title>
+    <link rel = "icon" href = "svg/j. (4).svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <link rel="stylesheet" href="cssstyles/style.css">
+    <link rel="stylesheet" href="cssstyles/contents.css">
+    <link rel="stylesheet" href="cssstyles/header.css">
+    <link rel="stylesheet" href="cssstyles/hero.css">
+    <link rel="stylesheet" href="cssstyles/mediaqueries.css">
+    <link rel="stylesheet" href="cssstyles/footer.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="cssstyles/responsive.css">
+    
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="spinner"></div>
+        <img class="cloud1" src="Logo.png" alt="">
+        <img class="cloud2" src="Logo.png" alt="">
+        <img class="cloud3" src="Logo.png" alt="">
+        <img class="cloud4" src="Logo.png" alt="">
+        <img class="cloud5" src="Logo.png" alt="">
+        <img class="cloud6" src="Logo.png" alt="">
+    </div>
+
+    <header class="header" data-aos="zoom-in-down">
+        <div class="nav-container">
+            <div data-text="Ulap" class="logo">
+                <a href="ulap.html"><img class="logo-img" src="Logo.png" alt="Logo"></a>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="ulap.html">Home</a></li>
+                    <li><a href="aboutme.html">About me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="htmlfiles/contanct.html">Contact</a></li>
+                    <li><a href="htmlfiles/resume.html">Resume</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-container">
+                <div class="instagram">
+                    <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                </div>
+                <div class="github">
+                    <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                </div>
+                <div class="discord">
+                    <a href="https://discordapp.com/users/804271553620738079" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <nav id="hamburger-nav" class="ham-nav">
+            <div data-text="Ulap" class="logo">
+                <img class="logo-img" src="Logo.png" alt="Logo">
+            </div>
+            <div class="hamburger-menu" >
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="menu-links">
+                <li><a href="ulap.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="aboutme.html" onclick="toggleMenu()">About me</a></li>
+                <li><a href="projects.html" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="htmlfiles/contanct.html" onclick="toggleMenu()">Contact</a></li>
+                <li><a href="htmlfiles/resume.html" onclick="toggleMenu()">Resume</a></li>
+                <div class="icons-container">
+                    <div class="instagram">
+                        <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                    </div>
+                    <div class="github">
+                        <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                    </div>
+                    <div class="discord">
+                        <a href="https://discordapp.com/users/804271553620738079" onclick="toggleMenu()" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container">
+        <div class="hero" data-aos="fade-up">
+            <p class="author-name">Hey, I'm Aenon</p>
+            <h1>UI Designer & Web Developer</h1>
+            <p class="info">An Aspiring UI Designer & Web Developer and currently learning and improving web developing skills.</p>
+            <div class="button-container">
+                <a href="aboutme.html">
+                    <button>
+                    <p>See more</p>
+                    <img class="plane" src="icons/plane.svg" alt="">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="services-section">
+            <div data-aos="fade-up" class="services-label">            
+                <img src="icons/doublearrow.svg" alt="">
+                <p  data-aos="fade-up">What i can provide</p>
+                <img src="icons/doublearrow.svg" alt="">
+            </div>
+            <div class="services-wrapper">
+                <div class="services-container">
+                    <div  data-aos="fade-up-right" data-aos-delay="600" class="services-info">
+                        <p>COMPUTER HARDWARE SERVICING</p>
+                        <p class="diss">I do troubleshooting hardware devices and repairing computer related stuffs.</p>
+                        <button class="services-btn">
+                            <a href="htmlfiles/contanct.html">
+                                <img src="icons/css icon.svg" alt="">
+                                <p>Contact now</p>
+                            </a>
+                        </button>
+                    </div>
+                    <img  data-aos="fade-up-left" data-aos-duration="1000" class="css" src="svg/CSS.svg" alt="">
+                </div>
+
+                <div class="services-container">
+                    <div class="services-info"  data-aos="fade-left" data-aos-delay="600">
+                        <p>UI/LANDING PAGE DESIGNER</p>
+                        <p class="diss">I do built user friendly and efficient yet eye catching landing page designs.</p>
+                        <button class="services-btn">
+                            <a href="htmlfiles/contanct.html">
+                                <img src="icons/gdesigner.svg" alt="">
+                                <p>Contact now</p>
+                            </a>
+                        </button>
+                    </div>
+                    <img  data-aos="fade-right" src="svg/Designer.svg" alt="">
+                </div>
+
+                <div class="services-container">
+                    <div class="services-info" data-aos="zoom-in-left" data-aos-delay="600">
+                        <p>GRAPHIC DESIGNER</p>
+                        <p class="diss">I do create graphic designs such as Logo, Presentations and, Posters</p>
+                        <button class="services-btn">
+                            <a href="htmlfiles/contanct.html">
+                                <img src="icons/Design-icon.svg" alt="">
+                                <p>Contact now</p>
+                            </a>
+                        </button>
+                    </div>
+                    <img src="svg/g-designer.svg" alt="" data-aos="zoom-in-right">
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="skillset">
+        <div class="skill-bg"></div>
+        <div class="container" data-aos="zoom-in">
+            <p class="skill-label"> Tools For Development:</p>
+            <div class="skills-container">
+                <div data-text="HTML" class="html" >
+                    <img src="icons/vscode-icons_file-type-html.svg" alt="">
+                    <p>html</p>
+                </div>
+
+                <div data-text="CSS" class="css">
+                    <img src="icons/vscode-icons_file-type-css.svg" alt="">
+                    <p>Css</p>
+                </div>
+
+                <div  data-text="Javascript" class="js">
+                    <img src="icons/javascript-1.svg" alt="">
+                    <p>javaScript</p>
+                </div>
+
+                <div data-text="Java" class="css">
+                    <img src="icons/java-4.svg" alt="">
+                    <p>java</p>
+                </div>
+
+                <div data-text="python" class="html">
+                    <img src="icons/python-5.svg" alt="">
+                    <p>python</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skillset">
+        <div class="skill-bg"></div>
+        <div class="container" data-aos="zoom-in">
+            <p class="skill-label"> Tools For Editing:</p>
+
+            <div class="skills-container">
+                <div data-text="Figma" class="skill-1 html">
+                    <img src="icons/logos_figma.svg" alt="">
+                    <p>figma</p>
+                </div>
+
+                <div data-text="Powerpoint" class="skill-1 html">
+                    <img src="icons/vscode-icons_file-type-powerpoint.svg" alt="">
+                    <p>Powerpoint</p>
+                </div>
+
+                <div data-text="Photoshop" class="skill-1 js">
+                    <img  src="icons/adobe-photoshop-2 1.svg" alt="">
+                    <p>Photoshop</p>
+                </div>
+
+                <div data-text="Illustrator" class="skill-1 html">
+                    <img src="icons/adobe-illustrator-cc-icon 1.svg" alt="">
+                    <p>Illustrator</p>
+                </div>
+
+                <div data-text="Canva" class="skill-1 html">
+                    <img src="icons/canva.svg" alt="">
+                    <p>Canva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <section>
+        <div data-aos="fade-right" class="project-label">
+            <img src="icons/doublearrow.svg" alt="">
+            <p>Personal Projects</p>
+            <img src="icons/doublearrow.svg" alt="">
+        </div>
+    </section>
+
+    <section class="project">  
+        <div class="project-bg"></div> 
+        <div class="container">
+            <div class="proj-wrapper">
+                <div class="proj-info">
+                    <h1 class="">Sweet Message</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula tincidunt, egestas tempus quam.  
+                       </p>
+                    <a target="_blank" href="https://srmntnn.github.io/biga_biga.html">
+                    <button>
+                        <img src="icons/link.svg" alt="">
+                    </button></a>
+                </div>
+    
+                <div class="proj">
+                    <img src="projects/swit.svg" alt="">
+                    <div class="project-tools">
+                        <div>
+                            <img src="icons/vscode-icons_file-type-html.svg" alt="">
+                            <p>html</p>
+                        </div>
+            
+                        <div class="css">
+                            <img src="icons/vscode-icons_file-type-css.svg" alt="">
+                            <p>Css</p>
+                        </div>
+            
+                        <div class="js">
+                                <img src="icons/javascript-1.svg" alt="">
+                                <p>javaScript</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-2" data-aos="fade-up">
+            <div style="margin-top: 224px; margin-bottom: 204px;" class="button-container btn-2">
+                <a href="projects.html">
+                    <button>
+                    <p>See more projects</p>
+                    <img class="plane" src="icons/plane.svg" alt="">
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <a href="#top" class="scroll-top-btn">
+        <span class="icon-angle-up"><img src="icons/doublearrow.svg" alt=""></span>
+    </a>
+</body>
+<footer>
+    <section class="footer-container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h1>I’m currently available for freelance
+                        work.</h1>
+                    <p>If you are looking for a  designer to work  that love to get stuffs done faster, let’s talk.</p>
+                    <div class="contacts">
+                        <p>(+63) 9063244739</p>
+                        <span></span>
+                        <p>sarmentaaenon@gmaill.com</p>
+                    </div>
+                    <a href="#">
+                        <button class="contact-btn">Got a project in mind? Lets talk.</button>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <section class="footer-container">
+            <div class="contact-container">
+                <div class="footer-contents">
+                    <div>
+                        <p>&copy;2023 Aenon, Ulap, All Rights Reserved.</p>
+                    </div>
+        
+                    <div>
+                        <li class="terms"><a href="#">Terms and Condition</a></li>
+                        <li class="terms-2"><a href="#">Privacy Policy</a></li>
+                    </div>
+        
+                    <div class="icons-container">
+                        <div class="instagram">
+                            <a href="https://instagram.com/srmntnn" target="_blank" onclick="toggleMenu()"><img src="icons/instagram.svg" alt=""></a>
+                        </div>
+                        <div class="github">
+                            <a target="_blank" href="https://github.com/Srmntnn" onclick="toggleMenu()"><img src="icons/Github.svg" alt=""></a>
+                        </div>
+                        <div class="discord">
+                            <a href="https://discordapp.com/users/804271553620738079" onclick="toggleMenu()" target="_blank"><img src="icons/Discord.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</footer>
+</html>
